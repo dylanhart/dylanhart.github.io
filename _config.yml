@@ -2,3 +2,5 @@ name: Your New Jekyll Site
 markdown: redcarpet
 pygments: none
 permalink: none
+
+exclude: ["CNAME", "README.md"]
