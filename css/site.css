@@ -29,6 +29,7 @@ body, html {
 	padding-left: 15px;
 }
 .post:hover {
+	border-left-color: #46DAFA;
 }
 .post-title {
 	margin-bottom: 0.2em;
