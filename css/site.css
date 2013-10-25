@@ -30,8 +30,8 @@ body, html {
 	padding-left: 15px;
 }
 .post:hover {
-	border-left-color: #46DAFA;
-	border-right-color: #46DAFA;
+	border-left-color: #2DC1E1;
+	border-right-color: #2DC1E1;
 }
 .post-title {
 	margin-bottom: 0.2em;
