@@ -1,0 +1,13 @@
+<div class="panel round">
+	<h5>Categories</h5>
+	<ul class="side-nav nopadding">
+		{% for cat in site.categories %}
+		<li><a href="{{site.url}}/categories/{{cat | first}}">{{ cat | first }}</a></li>
+		{% endfor %}
+	</ul>
+</div>
+<h5>Links</h5>
+<ul class="inline-list">
+	<li><a href="https://github.com/level1kid">Github</a></li>
+	<li><a href="http://team3925.com">Robotics</a></li>
+</ul>

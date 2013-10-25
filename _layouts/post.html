@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<article>
+
+	<h2 class="post-title">{{ page.title }}</h2>
+	<h6 class="muted">{{page.subtitle}} ({{ page.date | date_to_string }})</h6>
+
+	<br />
+
+	<div id="post-content">
+	{{ content }}
+	</div>
+
+</article>

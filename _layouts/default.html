@@ -1,0 +1,59 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Dylan Hart</title>
+	
+	<!-- foundation -->
+	<link rel="stylesheet" href="{{ site.url }}/css/foundation.css">
+	<script src="{{ site.url }}/js/vendor/custom.modernizr.js"></script>
+
+	<!-- site css -->
+	<link rel="stylesheet" type="text/css" href="{{ site.url }}/css/site.css">
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+<body>
+<div id="wrapper">
+	<!-- Nav Bar -->
+ 
+	{% include navbar.html %}
+ 
+	<!-- End Nav -->
+	
+ 
+	<!-- Main Page Content and Sidebar -->
+ 
+	<div class="row">
+ 
+		<!-- Main Blog Content -->
+		<div class="large-9 columns" role="content">
+ 
+{{ content }}
+
+		</div>
+ 
+		<!-- End Main Content -->
+
+		<!-- Sidebar -->
+ 
+		<aside class="large-3 columns">
+
+		{% include sidebar.html %}
+
+		</aside>
+	
+		<!-- End Sidebar -->
+	</div>
+ 
+	<!-- End Main Content and Sidebar -->
+</div>
+ 
+	<!-- Footer -->
+ 
+	{% include footer.html %}
+
+	<!-- End Footer -->
+</body>
+</html>
