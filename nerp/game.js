@@ -185,7 +185,8 @@ game.player = {
 	render: function(delta) {
 		context.save()
 		context.translate(this.pos.x, this.pos.y)
-		context.rotate(Math.min(this.vel.y / .3 * Math.PI/4, Math.PI/2))
+		context.rotate(Math.max(this.vel.y / .3 * Math.PI/4, -Math.PI/2))
+		if (this.isdead) context.scale(1,-1)
 		if (this.img !== undefined)
 			context.drawImage(this.img, -this.size/2, -this.size, this.size, this.size);
 		// context.fillText("vel: " + JSON.stringify(this.vel), 10, 10);
@@ -207,8 +208,8 @@ game.player = {
 
 		if (this.pos.y <= 0) {
 			this.pos.y = 0;
-			// this.vel.y *= this.vel.y < -.1 ? -.5 : 0;
-			this.vel.y = this.stats.jump
+			this.vel.y *= this.vel.y < -.1 ? -.5 : 0;
+			// this.vel.y = this.stats.jump
 			this.die()
 		} else {
 			this.vel.y += game.world.gravity * delta;
