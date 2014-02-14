@@ -152,7 +152,11 @@ game.world = {
 		}
 		//update entities
 		for (var i = 0; i < this.entities.length; i++) {
-			this.entities[i].update(delta);
+			if (this.entities[i].shouldRemove && this.entities[i].shouldRemove()) {
+				this.entities.splice(i--, 1)
+			} else {
+				this.entities[i].update(delta);
+			}
 		}
 	},
 	init: function() {
