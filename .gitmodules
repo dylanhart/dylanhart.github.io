@@ -1,4 +1,4 @@
 [submodule "javatut"]
 	path = javatut
-	url = https://github.com/level1kid/reavealjs-javatut.git
+	url = https://github.com/level1kid/revealjs-javatut.git
 	branch = dist
