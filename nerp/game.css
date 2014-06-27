@@ -16,3 +16,14 @@
 .muted {
 	color: #aaaaaa;
 }
+body {
+	background-image: url("assets/images/nerpatbeach.png");
+}
+.content {
+	background-color: #fffffa;
+	border-right: solid 4px #ddccaa;
+	border-bottom: solid 4px #ddccaa;
+	width: 600px;
+	margin: auto;
+	border-radius: 30px;
+}
