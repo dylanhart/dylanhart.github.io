@@ -2,3 +2,6 @@
 	path = javatut
 	url = https://github.com/level1kid/revealjs-javatut.git
 	branch = dist
+[submodule "4jamgame"]
+	path = 4jamgame
+	url = https://github.com/level1kid/4jamgame.git
