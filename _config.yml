@@ -2,5 +2,6 @@ name: Your New Jekyll Site
 markdown: redcarpet
 pygments: none
 permalink: none
+baseurl: http://d-hart.com
 
 exclude: ["CNAME", "README.md"]
