@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Dylan Hart
-date: 2016-9-27
+date: 2017-1-24
 title: "Introducing SpoofProof.net"
 subtitle: "A project for the SBHacksIII Hackathon"
 categories: spoofproof sbhacks
