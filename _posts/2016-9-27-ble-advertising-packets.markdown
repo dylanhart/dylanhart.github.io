@@ -30,7 +30,7 @@ The [ScanCallback][1] receives incoming advertising packets in the `onScanResult
 
 The broadcast data section of [the packet][2] is 31 bytes long and consists of several data sections.
 
-<table>
+<table class="bordered">
     <tr>
         <th colspan="31">Broadcast Data</th>
     </tr>
@@ -50,7 +50,7 @@ The broadcast data section of [the packet][2] is 31 bytes long and consists of s
 
 Each data segment is layed out according to the following format:
 
-<table>
+<table class="bordered">
     <tr>
         <th colspan="5">Data Segment</th>
     </tr>
@@ -115,7 +115,7 @@ class BleCallback extends ScanCallback {
 Once we have the data we can it!
 The following will describe parsing the iBeacon advertising data.
 
-<table>
+<table class="bordered">
     <thead>
         <tr>
             <th colspan="27">iBeacon Data Segment</th>
