@@ -3,59 +3,35 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Dylan Hart</title>
-	
-	<!-- foundation -->
-	<link rel="stylesheet" href="{{ site.url }}/css/foundation.css">
-	<script src="{{ site.url }}/js/vendor/custom.modernizr.js"></script>
 
-	<!-- site css -->
-	<link rel="stylesheet" type="text/css" href="{{ site.url }}/css/site.css">
-
-    <!-- syntax highlighting CSS -->
-    <link rel="stylesheet" href="{{ site.url }}/css/syntax.css">
+	<link rel="stylesheet" type="text/css" href="http://dylanh.art/okay.css/okay.css">
+	<link rel="stylesheet" type="text/css" href="/css/site.css">
+    <link rel="stylesheet" href="/css/syntax.css">
 </head>
 <body>
-<div id="wrapper">
-	<!-- Nav Bar -->
- 
-	{% include navbar.html %}
- 
-	<!-- End Nav -->
-	
- 
-	<!-- Main Page Content and Sidebar -->
- 
-	<div class="row">
- 
-		<!-- Main Blog Content -->
-		<div class="large-9 columns" role="content">
- 
-{{ content }}
-
-		</div>
- 
-		<!-- End Main Content -->
-
-		<!-- Sidebar -->
- 
-		<aside class="large-3 columns">
-
-		{% include sidebar.html %}
-
-		</aside>
-	
-		<!-- End Sidebar -->
+<div class="container">
+    <div class="blue card">
+        <a href="/" class="inline nav-link">
+			<h1>Dylan Hart</h1>
+		</a>
 	</div>
- 
-	<!-- End Main Content and Sidebar -->
+	<div class="flex gap between">
+		<div class="flex-grow container">
+			{{ content }}
+		</div>
+		<aside class="inline">
+			<h3>Links:</h3>
+			<ul>
+				<li><a href="http://nerp.d-hart.com">Nerp</a></li>
+				<li><a href="https://github.com/dylanhart">Github</a></li>
+				<li><a href="https://www.linkedin.com/in/dylan-hart">LinkedIn</a></li>
+			</ul>
+		</aside>
+	</div>
+    <p class="small">
+		&copy; Dylan Hart, 2017
+	</pc>
 </div>
- 
-	<!-- Footer -->
- 
-	{% include footer.html %}
-
-	<!-- End Footer -->
-
-	{% include analytics.html %}
+{% include analytics.html %}
 </body>
 </html>

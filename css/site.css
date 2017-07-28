@@ -1,46 +1,7 @@
-#header-base, .top-bar {
-	background-color: #13A7C7;
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
+a.nav-link {
+    color: inherit;
+    text-decoration: none;
 }
-.nav-text {
-	color: #fff;
-	margin-bottom: 0.2em;
-	font-weight: normal;
-	text-rendering: optimizeLegibility;
-}
-body, html {
-	height: 100%;
-}
-#wrapper {
-	padding-bottom: 100px;
-	min-height: 100%
-}
-#footer {
-	margin-top: -100px;
-	height:100px;
-}
-.muted {
-	color: #aaa;
-	font-weight: 400;
-}
-.post {
-	border: 1px solid #eee;
-	border-left: 5px solid #13A7C7;
-	border-right: 5px solid #13A7C7;
-	padding-left: 15px;
-}
-.post:hover {
-	border-left-color: #2DC1E1;
-	border-right-color: #2DC1E1;
-}
-.post-title {
-	margin-bottom: 0.2em;
-}
-
-.round {
-	border-radius: 10px;
-}
-.nopadding {
-	padding: 0;
+a.nav-link:hover {
+    text-decoration: underline;
 }

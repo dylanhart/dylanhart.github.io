@@ -1,15 +1,12 @@
 ---
 layout: default
 ---
-<article>
-
-	<h2 class="post-title">{{ page.title }}</h2>
-	<h6 class="muted">{{page.subtitle}} ({{ page.date | date_to_string }})</h6>
-
-	<br />
-
-	<div id="post-content">
-	{{ content }}
+<article class="card">
+    <div class="big header">
+		<h2 class="post-title">{{ page.title }}</h2>
+		<h3 class="small">{{page.subtitle}} ({{ page.date | date_to_string }})</h3>
 	</div>
-	<br />
+    <div class="container">
+		{{ content }}
+	</div>
 </article>
